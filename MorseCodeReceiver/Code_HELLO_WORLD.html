@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code "HELLO WORLD"</Code></title>
+	<style>
+        body{
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let p = new Promise((resolve, reject) => {
+            setTimeout(resolve, 1500);
+        });
+        
+        //H
+        p.then(dit).then(nextSignal)
+        .then(dit).then(nextSignal)
+        .then(dit).then(nextSignal)
+        .then(dit).then(nextLetter)
+
+        //E
+        .then(dit).then(nextLetter)
+
+        //L
+        .then(dit).then(nextSignal)
+        .then(dah).then(nextSignal)
+        .then(dit).then(nextSignal)
+        .then(dit).then(nextLetter)
+
+        //L
+        .then(dit).then(nextSignal)
+        .then(dah).then(nextSignal)
+        .then(dit).then(nextSignal)
+        .then(dit).then(nextLetter)
+
+        //O
+        .then(dah).then(nextSignal)
+        .then(dah).then(nextSignal)
+        .then(dah).then(nextWord)
+
+        //W
+        .then(dit).then(nextSignal)
+        .then(dah).then(nextSignal)
+        .then(dah).then(nextLetter)
+
+        //O
+        .then(dah).then(nextSignal)
+        .then(dah).then(nextSignal)
+        .then(dah).then(nextLetter)
+
+        //R
+        .then(dit).then(nextSignal)
+        .then(dah).then(nextSignal)
+        .then(dit).then(nextLetter)
+
+        //L
+        .then(dit).then(nextSignal)
+        .then(dah).then(nextSignal)
+        .then(dit).then(nextSignal)
+        .then(dit).then(nextLetter)
+
+        //D
+        .then(dah).then(nextSignal)
+        .then(dit).then(nextSignal)
+        .then(dit).then(nextLetter)
+        
+        function nextWord(){
+            white();
+            return new Promise((resolve, reject) => {
+              setTimeout(resolve, 2500);
+            });
+        }
+
+        function nextLetter(){
+            white();
+            return new Promise((resolve, reject) => {
+              setTimeout(resolve, 1800);
+            });
+        }
+
+        function nextSignal(){
+            white();
+            return new Promise((resolve, reject) => {
+              setTimeout(resolve, 600);
+            });
+        }
+
+        function dit(){
+            black();
+            return new Promise((resolve, reject) => {
+              setTimeout(resolve, 600);
+            });
+        }
+
+        function dah(){
+            black();
+            return new Promise((resolve, reject) => {
+              setTimeout(resolve, 1800);
+            });
+        }
+
+        function black(){
+            document.body.style.backgroundColor='black';
+        }
+
+        function white(){
+            document.body.style.backgroundColor='white';
+        }
+    </script>
+</body>
+</html>
