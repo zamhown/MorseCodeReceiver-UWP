@@ -17,13 +17,8 @@ using Windows.UI.Xaml.Navigation;
 using Windows.UI.Core; // Required to access the core dispatcher object
 using Windows.Devices.Sensors; // Required to access the sensor platform and the ALS
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/p/?linkid=234238
-
 namespace MorseCodeReceiver
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         private LightSensor _lightsensor; // Our app' s lightsensor object
@@ -82,7 +77,7 @@ namespace MorseCodeReceiver
                       if(span > 10 && !readed)
                       {
                           //Letter recognition
-                          //TODO: Two fork search trees can be used to improve efficiency.
+                          //TODO: Binary search tree can be used to improve efficiency.
                           switch (txtOutput.Text)
                           {
                               case "·-":
