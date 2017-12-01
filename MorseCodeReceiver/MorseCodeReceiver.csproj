@@ -107,7 +107,7 @@
     <None Include="HelloWorld_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Code_HELLO_WORLD.html" />
+    <Content Include="Sending_End_HELLO_WORLD.html" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
